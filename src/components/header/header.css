@@ -1,0 +1,57 @@
+.header{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--logo-color);
+}
+
+.header__logo{
+    max-width: 100px;
+}
+
+.header__buttons{
+    display: flex;
+}
+
+.header__btn{
+    position: relative;
+    margin-right: 40px;
+}
+
+.header__btn:last-child{
+    margin-right: 0;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
+
+    border-radius: 50%;
+    background-color: var(--price-color);
+}
+
+.header__counter{
+    width: 18px;
+    height: 18px;
+
+    font-size: 14px;
+
+    position: absolute;
+    top: -6px;
+    right: -11px;
+}
