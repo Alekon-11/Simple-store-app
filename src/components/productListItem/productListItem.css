@@ -16,7 +16,9 @@
 .product-card__naming,
 .product-card__price,
 .product-card__rate,
-.product-card__btn{
+.product-card__btn,
+.product-card__old-price,
+.product-card__discount{
     position: absolute;
     font-size: 17px;
     font-weight: 600;
@@ -33,6 +35,23 @@
     line-height: 1;
 
     color: var(--price-color);
+}
+
+.product-card__old-price{
+    text-decoration: line-through;
+    bottom: 65px; 
+    right: 20px;
+
+    font-size: 13px;
+    color: var(--price-color);
+}
+
+.product-card__discount{
+    font-size: 1.4rem;
+    color: var(--discount-color);
+
+    top: 20px; 
+    left: 20px;
 }
 
 .product-card__rate{

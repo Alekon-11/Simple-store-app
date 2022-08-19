@@ -5,10 +5,12 @@ function Footer({onSwitchPage}){
         <footer className="footer">
             <div className="container">
                 <div className="footer__wrapper">
-                    <a href=".#" className="logo footer__logo">QPICK</a>
+                    <a href=".#" onClick={(e) => onSwitchPage(e.currentTarget.getAttribute('data-page'))} data-page="main" className="logo footer__logo">QPICK</a>
                     <ul className="footer__btns">
                         <li className="footer__btn"><button className='btn-trans' type='button'>Избранное</button></li>
-                        <li onClick={() => onSwitchPage('cart')} className="footer__btn"><button className='btn-trans' type='button'>Корзина</button></li>
+                        <li onClick={(e) => onSwitchPage(e.currentTarget.getAttribute('data-page'))} 
+                            data-page="cart"
+                            className="footer__btn"><button className='btn-trans' type='button'>Корзина</button></li>
                         <li className="footer__btn"><button className='btn-trans' type='button'>Контакты</button></li>
                         <li className="footer__btn"><button className='btn-trans' type='button'>Условия сервиса</button></li>
                         <li className="footer__lang">

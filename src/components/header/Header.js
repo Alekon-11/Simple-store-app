@@ -21,13 +21,19 @@ class Header extends Component{
 
         return(
             <header className="header">
-                <a onClick={() => this.props.onSwitchPage(null)} href='.#' className="logo header__logo">QPICK</a>
+                <a onClick={(e) => this.props.onSwitchPage(e.currentTarget.getAttribute('data-page'))} 
+                    data-page="main"
+                    href='.#' 
+                    className="logo header__logo">QPICK</a>
                 <div className="header__buttons">
                     <button type='button' className="header__btn header__favorites">
                         <img src="resources/icons/heart.png" alt="favorites" />
                         { favorites ? <div className="counter header__counter">{favorites}</div> : null}
                     </button>
-                    <button onClick={() => this.props.onSwitchPage('cart')} type='button' className="header__btn header__cart">
+                    <button onClick={(e) => this.props.onSwitchPage(e.currentTarget.getAttribute('data-page'))} 
+                            data-page="cart" 
+                            type='button' 
+                            className="header__btn header__cart">
                         <img src="resources/icons/cart.png" alt="shopping cart" />
                         { cart ? <div className="counter header__counter">{cart}</div> : null}
                     </button>

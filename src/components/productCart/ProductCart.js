@@ -28,8 +28,13 @@ class ProductCart extends Component{
                                  {...props}/>
         });
     
-        const total = cartData.length ? cartData.map(item => item.quantity * item.price).reduce((sum, current) => sum + current) : 0
-    
+
+        const finalPrice = cartData.map(item => {
+            const price = item.discount ? Math.trunc(item.price / 100 * (100 - item.discount)) : item.price;
+            return item.quantity * price;
+        });
+        const total = finalPrice.length ? finalPrice.reduce((sum, current) => sum + current) : 0;
+
         return(
             <main className="section cart">
                 <h2 className="section__title">Корзина</h2>

@@ -1,15 +1,15 @@
 {
     "earphones": [
-        {"naming": "Apple BYZ S852I", "price": 2927, "rate": 4.7, "id": "100LkgYespod", "img":"resources/img/earphones/byzs8521.png", "oldPrice": 3527, "discount": false},
+        {"naming": "Apple BYZ S852I", "price": 3527, "rate": 4.7, "id": "100LkgYespod", "img":"resources/img/earphones/byzs8521.png", "discount": 20},
         {"naming": "Apple EarPods", "price": 2327, "rate": 4.5, "id": "95LkgYespod", "img":"resources/img/earphones/earpods.png"},
         {"naming": "Apple EarPods", "price": 2327, "rate": 4.5, "id": "85LkgYespod", "img":"resources/img/earphones/earpodsbox.png"},
-        {"naming": "Apple BYZ S852I", "price": 2927, "rate": 4.7, "id": "45LkgYespod", "img":"resources/img/earphones/byzs8521.png", "discount": 20},
+        {"naming": "Apple BYZ S852I", "price": 3527, "rate": 4.7, "id": "45LkgYespod", "img":"resources/img/earphones/byzs8521.png", "discount": 20},
         {"naming": "Apple EarPods", "price": 2327, "rate": 4.5, "id": "35LkgYespod", "img":"resources/img/earphones/earpods.png"},
         {"naming": "Apple EarPods", "price": 2327, "rate": 4.5, "id": "25LkgYespod", "img":"resources/img/earphones/earpodsbox.png"}
     ],
     "wirelessEarphones": [
         {"naming": "Apple AirPods", "price": 9527, "rate": 4.7, "id": "55LkgYespod", "img":"resources/img/wireless-earphones/airpods.png"},
-        {"naming": "GERLAX GH-04", "price": 6527, "rate": 4.7, "id": "65LkgYespod", "img":"resources/img/wireless-earphones/borofone.png"},
+        {"naming": "GERLAX GH-04", "price": 6527, "rate": 4.7, "id": "65LkgYespod", "img":"resources/img/wireless-earphones/borofone.png", "discount": 50},
         {"naming": "BOROFONE BO4", "price": 7527, "rate": 4.7, "id": "75LkgYespod", "img":"resources/img/wireless-earphones/gerlax.png"}
     ]
 }
