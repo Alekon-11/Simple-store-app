@@ -77,3 +77,11 @@
 .btn-trans:hover{
     color: var(--price-color);
 }
+
+@media (width <= 750px){
+    .product-card{
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

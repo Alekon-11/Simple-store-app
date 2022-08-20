@@ -41,6 +41,7 @@ class ProductCart extends Component{
                 <ul className="cart__list">
                     {list}
                 </ul>
+                {list.length ? null : <div className="cart__empty-block empty-block">Корзина пуста {`:(`}</div>}
                 <form action="#" className='cart__total'>
                     итого <span>₽ {total}</span>
                     <button type='submit' className="cart__btn">Перейти к оформлению</button>
